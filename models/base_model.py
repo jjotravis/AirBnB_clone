@@ -18,7 +18,7 @@ class BaseModel:
                         datetime.strptime(value, date_time_format)
                     setattr(self, key, value)
         else:
-            self.id = uuid4()
+            self.id = str(uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
             storage.new(self)
