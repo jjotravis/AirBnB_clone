@@ -2,10 +2,10 @@
 """
 A class with state attributes
 """
-from base_model import BaseModel
+from models.base_model import BaseModel
 
 
-class State(BaseMode):
+class State(BaseModel):
     """
     State class that inherits from BaseModel
     """
